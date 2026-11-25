@@ -221,23 +221,10 @@ proxy-groups:
   - 🇨🇦 加拿大 | CAN
   - 🇺🇸_US_美国_IPV4
   - 🇫🇷_FR_法国_IPV4
-- name: 多线程加速
-  type: load-balance
-  strategy: round-robin
-  url: http://www.gstatic.com/generate_204
-  interval: 300
-  proxies:
-  - 🇹🇼 🇨🇳 台湾 | TWN
-  - 🇹🇼TW_1|1.2MB/s
-  - 🇫🇷 法国 | FRA
-  - 🇹🇭 泰国 | THA
-  - 🇮🇹_IT_意大利_IPV4 (4)
-  - 🇭🇰_HK_香港_IPV4
 - name: 手动选择
   type: select
   proxies:
   - 自动选择
-  - 多线程加速
   - 🇹🇼 🇨🇳 台湾 | TWN
   - 🇹🇼TW_1|1.2MB/s
   - 🇫🇷 法国 | FRA
